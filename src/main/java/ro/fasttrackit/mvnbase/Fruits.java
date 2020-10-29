@@ -1,18 +1,28 @@
 package ro.fasttrackit.mvnbase;
 
 public class Fruits implements ShopItem {
+    private final String name;
+    private final int price;
+    private final Category category;
+
+    public Fruits(String name, int price, Category category) {
+        this.name = name;
+        this.price = price;
+        this.category = category;
+    }
+
     @Override
     public String name() {
-        return null;
+        return name;
     }
 
     @Override
     public int price() {
-        return 0;
+        return price;
     }
 
     @Override
     public Category category() {
-        return null;
+        return category;
     }
 }

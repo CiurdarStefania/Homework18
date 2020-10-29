@@ -22,7 +22,7 @@ public class Shop<Clothes> {
     public List<Clothes> findByCategory(Category cat) {
         List<Clothes> result = new ArrayList<>();
         for (Clothes clothes : item) {
-            if (clothes.Category().equals(cat)) {
+            if (clothes.equals(cat)) {
 
             }
 
@@ -43,7 +43,7 @@ public class Shop<Clothes> {
 
     public Clothes removeItem(String name) {
         for (Clothes clothes : item) {
-            if (clothes.category.equals(name)) {
+            if (clothes.name().equals(name)) {
                 removeItem(name);
             }
         }
